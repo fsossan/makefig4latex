@@ -11,7 +11,7 @@ legend style={at={(0.5,1.2)}, anchor=north, legend cell align=left, align=left, 
 ## Main functionalities
 
 - It generates a standalone tex file that can be compiled, or included in another tex file (as usual).
-- Simplified management of the relative font size compared to the plot size;
+- Simplified management of the relative font size compared to the plot size.
 - It compiles a pdf (requires `pdflatex` installed) if instructed to do so.
 
 Will work (almost) out of the box in MacOSx and probably in Linux. Won't work in MS Windows, unless modified.
