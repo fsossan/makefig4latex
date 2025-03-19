@@ -1,0 +1,23 @@
+\makeatletter
+\ifx\documentclass\@twoclasseserror
+\def\classok{}
+\else
+\documentclass{standalone}
+
+\usepackage{amsmath, tikz, pgfplots, xcolor, colortbl}
+\usetikzlibrary{arrows,shapes,positioning,patterns,plotmarks}
+\usetikzlibrary{decorations.pathreplacing}
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\pgfkeys{/pgf/number format/.cd,1000 sep={\,}}
+
+% Select sans-serif font. Comment out fnext 2 lines for serif (Times)
+\usepackage[cm]{sfmath}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\large
+\fi
+\makeatother
+
+
