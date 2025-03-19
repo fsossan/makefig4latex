@@ -1,10 +1,18 @@
 # makefig4latex
 
-Wrapper for [matlab2tikz](https://github.com/matlab2tikz/matlab2tikz) (which I redistribute in this repository) with the following functionalities:
+This is a wrapper for the Matlab library [matlab2tikz](https://github.com/matlab2tikz/matlab2tikz) (which I redistribute in this repository) that can generate standalone PDF figures from a matlab plot. To try it out, download the repo, and run makefig4latex_demo.m.
 
-- it generates a standalone tex file that can be compiled, or included in another tex file (as usual);
-- simplified management of the relative font size compared to the plot size;
-- it compiles a pdf (optional), if instructed to do so.
+Tip (not yet implemented as an automated feature in the code): to handle extra long legends, replace the legend settings in preamble of the axis enviroment in the generated latex file with the following one:
+
+```latex
+legend style={at={(0.5,1.2)}, anchor=north, legend cell align=left, align=left, draw=none, fill=none, legend columns = 7}
+'''
+
+## Main functionalities
+
+- It generates a standalone tex file that can be compiled, or included in another tex file (as usual).
+- Simplified management of the relative font size compared to the plot size;
+- It compiles a pdf (requires `pdflatex` installed) if instructed to do so.
 
 Will work (almost) out of the box in MacOSx and probably in Linux. Won't work in MS Windows, unless modified.
 
