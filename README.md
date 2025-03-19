@@ -19,6 +19,7 @@ Will work (almost) out of the box in MacOSx and probably in Linux. Won't work in
   
 - `makefig4latex_demo.m` contains a simple demo for this utility.  
 - Add this folder to your Matlab path and save it if you wish to reuse the function elsewhere:
+
 ```text
   addpath('./')
   savepath()
@@ -27,8 +28,6 @@ Will work (almost) out of the box in MacOSx and probably in Linux. Won't work in
 ## Practical tips
 
 - The conversion preserves the size of the plot.
-- To control the (relative) size of the font, just play with `width`. You might forget about playing with matlab font configuration, which is painful.
+- To control the (relative) size of the font compared to the plot, you can adjust the function argument `width`. No need of playing with the matlab font-size configuration, which is painful.
 - If you wish to edit the generated latex plot, set delete_files to 0, so that the tex file will be preserved. 
 - Be aware that re-running the script will override any change you might have performed on the latex file, so save it elsewhere.
-
-
