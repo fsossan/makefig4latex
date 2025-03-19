@@ -6,7 +6,7 @@ Tip (not yet implemented as an automated feature in the code): to handle extra l
 
 ```latex
 legend style={at={(0.5,1.2)}, anchor=north, legend cell align=left, align=left, draw=none, fill=none, legend columns = 7}
-'''
+```
 
 ## Main functionalities
 
